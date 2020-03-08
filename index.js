@@ -18,6 +18,6 @@ class Formatter {
         return Formatter.capitalize(x);
       }
     })
-    return array[0] + new_array.join(" ")
+    return Formatter.capitalize(array[0]) + " " + new_array.join(" ")
   }
 }
