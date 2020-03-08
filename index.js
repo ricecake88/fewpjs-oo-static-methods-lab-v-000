@@ -12,7 +12,7 @@ class Formatter {
   static titleize(str) {
     let array = str.split(" ");
     let new_array = array.slice(1).map(function(x) {
-      if (['the', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'].includes(x)) {
+      if (['the', 'an', 'but', 'of', 'and', 'for', 'at', 'a', 'by', 'from'].includes(x)) {
         return x;
       } else {
         return Formatter.capitalize(x);
