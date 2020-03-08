@@ -6,7 +6,7 @@ class Formatter {
   }
   
   static sanitize(str) {
-    return str.replace('/[^A-Za-z0-9\-\'\s]+/g', '');
+   return str.replace(/[^A-Za-z\s\-\']+/g, "");
   }
   
   static titleize(str) {
