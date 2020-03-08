@@ -11,7 +11,7 @@ class Formatter {
   
   static titleize(str) {
     let array = str.split(" ");
-    let new_array = array.map(function(x) {
+    let new_array = array.slice(1).map(function(x) {
       if (['the', 'an', 'but', 'of', 'and', 'for', 'at', 'by', 'from'].includes(x)) {
         return x;
       } else {
